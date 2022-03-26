@@ -60,7 +60,19 @@ function Luxt1.CreateWindow(libName, logoId)
     UICorner.CornerRadius = UDim.new(0, 5)
     UICorner.Parent = key1
 
-        close.Name = "close"
+    keybindInfo1.Name = "keybindInfo"
+    keybindInfo1.Parent = sideHeading
+    keybindInfo1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    keybindInfo1.BackgroundTransparency = 1.000
+    keybindInfo1.Position = UDim2.new(0.585064113, 0, 0.935261846, 0)
+    keybindInfo1.Size = UDim2.new(0, 50, 0, 22)
+    keybindInfo1.ZIndex = 2
+    keybindInfo1.Font = Enum.Font.GothamSemibold
+    keybindInfo1.Text = "Close"
+    keybindInfo1.TextColor3 = Color3.fromRGB(255, 255, 255)
+    keybindInfo1.TextSize = 13.000
+    keybindInfo1.TextXAlignment = Enum.TextXAlignment.Left
+	close.Name = "close"
     close.Parent = MainHeader
     close.BackgroundTransparency = 1.000
     close.Position = UDim2.new(0.949999988, 0, 0.137999997, 0)
@@ -81,18 +93,6 @@ function Luxt1.CreateWindow(libName, logoId)
         wait(1)
         ScreenGui:Destroy()
     end)
-    keybindInfo1.Name = "keybindInfo"
-    keybindInfo1.Parent = sideHeading
-    keybindInfo1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    keybindInfo1.BackgroundTransparency = 1.000
-    keybindInfo1.Position = UDim2.new(0.585064113, 0, 0.935261846, 0)
-    keybindInfo1.Size = UDim2.new(0, 50, 0, 22)
-    keybindInfo1.ZIndex = 2
-    keybindInfo1.Font = Enum.Font.GothamSemibold
-    keybindInfo1.Text = "Close"
-    keybindInfo1.TextColor3 = Color3.fromRGB(255, 255, 255)
-    keybindInfo1.TextSize = 13.000
-    keybindInfo1.TextXAlignment = Enum.TextXAlignment.Left
 
     local UserInputService = game:GetService("UserInputService")
 
